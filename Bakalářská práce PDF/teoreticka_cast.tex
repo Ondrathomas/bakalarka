@@ -1,9 +1,275 @@
 \chapter{Teoretická část}
 
 \section{Úvod do problematiky analýzy spotřeby energie}
-\subsection{Význam a využití energetických dat}
-\subsection{Současné metody měření spotřeby}
+
+Energetická spotřeba představuje jeden z klíčových ukazatelů fungování moderní společnosti. Rostoucí podíl obnovitelných zdrojů, jejichž výroba je proměnlivá a obtížně predikovatelná, klade stále vyšší nároky na detailní sledování, ukládání a analýzu energetických dat. Jak zdůrazňují Sterner a Stadler (2019), právě schopnost porozumět spotřebě energie a efektivně ji řídit je nezbytným předpokladem pro úspěšnou transformaci energetických systémů směrem k udržitelnosti.
+
+\subsubsection{Význam a využití energetických dat}
+
+Energetická data představují základní informační zdroj pro pochopení a řízení spotřeby energie
+v různých kontextech, od jednotlivých domácností přes průmyslové podniky až po celé městské
+aglomerace. Jejich detailní sběr a analýza umožňuje nejen sledovat aktuální stav, ale také
+předvídat budoucí vývoj a přijímat kvalifikovaná rozhodnutí. Sterner a Stadler (2019) popisují
+význam a využití energetických dat, který lze dále charakterizovat v souvislosti s:
+
+\paragraph{Optimalizací provozu}
+\begin{itemize}
+    \item \textbf{Snížení nákladů:} detailní data o spotřebě umožňují identifikovat neefektivní procesy,
+    nadměrné ztráty nebo energeticky náročné zařízení.
+    \item \textbf{Zvýšení efektivity:} na základě analýzy lze navrhnout opatření, jako je lepší regulace
+    vytápění, optimalizace výrobních cyklů nebo využívání levnějších tarifů.
+    \item \textbf{Praktický příklad:} v administrativních budovách lze díky datům nastavit inteligentní
+    řízení osvětlení a~klimatizace podle skutečné obsazenosti.
+\end{itemize}
+
+\paragraph{Predikcí zatížení sítí}
+\begin{itemize}
+    \item \textbf{Stabilita elektrické soustavy:} energetická data umožňují provozovatelům sítí předvídat
+    špičky v~odběru a přizpůsobit výrobu či distribuci.
+    \item \textbf{Řízení rizik:} včasná predikce zatížení pomáhá předcházet výpadkům nebo nutnosti
+    využívat drahé záložní zdroje.
+    \item \textbf{Praktický příklad:} během zimních večerů lze na základě historických dat předvídat
+    zvýšenou spotřebu a připravit odpovídající kapacitu.
+\end{itemize}
+
+\paragraph{Integrací obnovitelných zdrojů}
+\begin{itemize}
+    \item \textbf{Vyrovnávání rozdílů mezi výrobou a spotřebou:} obnovitelné zdroje (solární, větrné)
+    jsou proměnlivé, proto je nutné jejich produkci sladit s~aktuální poptávkou.
+    \item \textbf{Podpora akumulace:} energetická data pomáhají rozhodovat, kdy ukládat energii do baterií
+    či jiných úložišť a kdy ji uvolnit.
+    \item \textbf{Praktický příklad:} solární elektrárna může díky predikci spotřeby a výroby lépe
+    plánovat dodávky do sítě a minimalizovat ztráty.
+\end{itemize}
+
+\paragraph{Podporou rozhodování}
+\begin{itemize}
+    \item \textbf{Domácnosti:} spotřebitelé mohou sledovat svou spotřebu v~reálném čase a přizpůsobit
+    chování (např. využívat spotřebiče v době levnější elektřiny).
+    \item \textbf{Podniky:} firmy využívají data pro plánování výroby, investic do úsporných technologií
+    nebo pro certifikace v~oblasti udržitelnosti.
+    \item \textbf{Městské celky a státy:} energetická data slouží jako podklad pro strategické
+    rozhodování, od plánování infrastruktury po tvorbu energetických politik.
+    \item \textbf{Praktický příklad:} město může na základě analýzy spotřeby rozhodnout o investici
+    do chytrého osvětlení nebo podpory komunitní energetiky.
+\end{itemize}
+
+Sterner a Stadler (2019) ve své \textit{Handbook of Energy Storage} zdůrazňují, že energetická data jsou
+klíčovým prvkem moderní energetiky. Podle nich umožňují optimalizovat provoz, předvídat zatížení sítí,
+integrovat obnovitelné zdroje a podporovat rozhodování na všech úrovních -- od domácností až po národní
+politiky. V jejich pojetí jsou data základním předpokladem pro efektivní fungování energetických
+úložišť a pro stabilitu celého systému.
+
+Vedle tohoto systémového pohledu se k~tématu vyjadřuje také Géron (2019) ve své knize
+\textit{Hands-On Machine Learning with Scikit-Learn, Keras \& TensorFlow}. Ten zdůrazňuje
+především metodologickou stránku. Podle Gérona jsou energetická data typickým příkladem časových
+řad, které lze analyzovat pomocí strojového učení. Jejich význam je právě v~tom, že umožňují:
+
+\begin{itemize}
+    \item \textbf{Optimalizaci provozu} prostřednictvím regresních modelů, které odhalují vztahy mezi
+    faktory spotřeby.
+    \item \textbf{Predikci zatížení sítí} díky neuronovým sítím (RNN, LSTM, GRU), schopným zachytit
+    dlouhodobé závislosti.
+    \item \textbf{Integraci obnovitelných zdrojů} díky modelům, které zvládají pracovat s~nestabilními
+    a nelineárními daty.
+    \item \textbf{Podporu rozhodování} na základě interpretovatelných modelů, které vysvětlují, proč
+    k~určité predikci došlo.
+\end{itemize}
+
+Zatímco Sterner a Stadler tedy akcentují energetický systém a jeho stabilitu, Géron se soustředí
+na technické nástroje strojového učení, které dávají energetickým datům praktickou hodnotu.
+Oba přístupy se vzájemně doplňují: bez kvalitních dat by nebylo možné efektivně řídit energetické
+úložiště, a bez metod strojového učení by nebylo možné tato data smysluplně analyzovat a využít
+pro predikci či klasifikaci.
+
+Tabulka č. 1 poskytuje informace, které jsou zaměřeny na komparativní pohled v souvislosti s významem energetických dat podle Sternera a Stadlera a Gérona. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{4cm}|p{4.2cm}|p{6cm}|p{4.5cm}|}
+\hline
+\textbf{Autor} & \textbf{Hlavní zaměření} & \textbf{Význam dat} & \textbf{Relevance} \\ \hline
+
+Sterner \& Stadler (2019) – Handbook of Energy Storage &
+Energetické systémy, ukládání energie, integrace do sítí &
+Energetická data jsou klíčová pro optimalizaci provozu, predikci zatížení sítí, integraci obnovitelných zdrojů a podporu rozhodování. Bez nich nelze efektivně řídit úložiště ani zajistit stabilitu systému. &
+Poskytují systémový rámec – ukazují, proč jsou data nezbytná pro fungování celé energetické soustavy. \\ \hline
+
+Aurélien Géron (2019) – Hands-On Machine Learning with Scikit-Learn, Keras \& TensorFlow &
+Strojové učení, analýza časových řad, predikce &
+Energetická data jsou typickým příkladem časových řad, které lze analyzovat ML metodami. Umožňují regresní analýzu (optimalizace), predikci pomocí LSTM/RNN (zatížení sítí), modelování nestabilních dat (obnovitelné zdroje) a interpretovatelné rozhodování. &
+Přináší metodologický rámec – ukazuje, jak konkrétní ML techniky dávají datům praktickou hodnotu. \\ \hline
+\end{tabular}
+
+\vspace{0.3cm}
+\small{Zdroj: Vlastní zpracování dle Sterner a Stadler (2019) a Géron (2019)}
+\end{table}
+Komparace ukazuje, že Sterner a Stadler poskytují rámec, proč jsou energetická data důležitá pro fungování celé soustavy, zatímco Géron nabízí nástroje, jak tato data prakticky analyzovat. Spojením obou perspektiv vzniká komplexní pohled, který je pro tuto práci klíčový: energetická data mají nejen systémový význam, ale i metodologickou hodnotu pro jejich zpracování pomocí strojového učení.
+
+\subsubsection{Současné metody měření spotřeby}
+
+Techniky měření spotřeby energie prošly v posledních dekádách zásadní evolucí, která odráží širší transformaci energetických systémů směrem k digitalizaci a inteligentnímu řízení. Zatímco tradiční indukční elektroměry poskytovaly pouze kumulativní údaje o odběru, současné digitální a chytré měřicí technologie umožňují detailní monitorování spotřeby v reálném čase, a to s vysokou granularitou a možností obousměrné komunikace. Tyto sofistikované systémy nejenže zpřesňují samotné měření, ale zároveň otevírají prostor pro pokročilé analytické postupy, predikci zatížení a integraci obnovitelných zdrojů. V následující podkapitole se proto zaměříme na současné metody měření spotřeby, jejich technické principy a význam pro efektivní řízení energetických procesů.
+
+Publikace \textit{The History of the Electricity Meter} od Synergy BV (2006) ukazuje, že vývoj měřicích technologií prošel zásadní proměnou od jednoduchých indukčních elektroměrů až po dnešní digitální a chytré systémy. Zatímco původní přístroje poskytovaly pouze kumulativní údaje o spotřebě, současné metody umožňují detailní sledování odběru v reálném čase, obousměrnou komunikaci s distribuční sítí a integraci do konceptu inteligentních sítí (smart grids). Tyto moderní technologie tak nejen zpřesňují samotné měření, ale stávají se klíčovým zdrojem dat pro optimalizaci provozu, predikci zatížení a podporu rozhodování na různých úrovních energetického systému.
+
+Vývoj metod měření spotřeby energie představuje klíčovou součást širší transformace energetických systémů. Od prvních mechanických elektroměrů až po dnešní sofistikované chytré technologie se postupně měnila nejen přesnost měření, ale i samotný charakter práce s daty. Současné přístroje již neslouží pouze k odečtu spotřeby, nýbrž se stávají aktivním prvkem inteligentních sítí, které umožňují detailní monitoring, obousměrnou komunikaci a pokročilé analytické využití. Následující přehled ukazuje hlavní etapy tohoto vývoje a jejich význam pro současnou praxi \citep{Synergy2006}.
+
+\begin{enumerate}
+    \item \textbf{Od mechanických k elektronickým měřičům} \\
+    Tradiční indukční elektroměry s rotujícím kotoučem byly po desetiletí standardem, avšak poskytovaly pouze kumulativní údaje o spotřebě. Přechod k elektronickým měřičům znamenal zásadní kvalitativní posun – tyto přístroje dokázaly měřit s vyšší přesností a ukládat data v digitální podobě, čímž otevřely cestu k jejich systematické analýze.
+
+    \item \textbf{Digitální elektroměry} \\
+    Moderní digitální měřiče umožňují detailní časové záznamy spotřeby, nikoli jen souhrnné hodnoty. Spotřebu lze sledovat v různých intervalech (hodinových, minutových), což poskytuje podklad pro hlubší analýzu průběhu odběru a identifikaci vzorců chování.
+
+    \item \textbf{Chytré elektroměry (Smart Meters)} \\
+    Současný trend směřuje k chytrým měřičům, které jsou schopné obousměrné komunikace s distribuční sítí. Tyto přístroje nejen měří, ale také odesílají data v reálném čase a přijímají pokyny, například k omezení odběru v době špičky. Jsou klíčovým prvkem konceptu smart grids, tedy inteligentních sítí, které dynamicky reagují na poptávku a výrobu.
+
+    \item \textbf{Rozšířené funkce} \\
+    Současné měřiče dokáží sledovat nejen spotřebu, ale i parametry kvality energie – napětí, proud, účiník či harmonické složky. Díky tomu mohou provozovatelé sítí i spotřebitelé lépe porozumět chování systému a včas odhalovat anomálie.
+
+    \item \textbf{Význam pro praxi} \\
+    Moderní metody měření se stávají datovým základem pro optimalizaci provozu budov a zařízení, predikci zatížení sítí, integraci obnovitelných zdrojů i strategické rozhodování na úrovni domácností, podniků a států. Nejde tedy jen o technické vylepšení, ale o zásadní kvalitativní skok: od jednoduchého odečtu k inteligentnímu monitoringu a obousměrné komunikaci. Energetická data se díky tomu stávají klíčovým zdrojem pro moderní řízení energetických procesů \citep{Synergy2006}.
+\end{enumerate}
+
+Publikace \textit{The History of the Electricity Meter} od Synergy BV (2006) ukazuje, že vývoj měřicích technologií prošel zásadní proměnou – od tradičních indukčních elektroměrů poskytujících pouze kumulativní údaje až po dnešní digitální a chytré systémy schopné obousměrné komunikace a detailního monitoringu spotřeby. Tento technologický rámec potvrzuje i \cite{KhanWyrwa2024}, kteří ve své studii \textit{A Survey of Quantitative Techniques in Electricity Consumption—A Global Perspective} zdůrazňují, že právě moderní metody měření spotřeby energie představují datový základ pro aplikaci pokročilých kvantitativních technik. Podle nich chytré elektroměry umožňují využití statistických modelů časových řad i metod strojového a hlubokého učení, což otevírá cestu k predikci zatížení, detekci anomálií a optimalizaci provozu.
+
+Zatímco Synergy BV akcentuje historickou evoluci měřičů a jejich technické schopnosti, Khan a Wyrwa ukazují, jak se tyto technologie stávají klíčovým zdrojem dat pro analytické postupy a strategické rozhodování. Společně tak oba zdroje potvrzují, že současné metody měření spotřeby nejsou jen technickým vylepšením, ale zásadním kvalitativním skokem, který propojuje technologii s datovou analýzou a praktickým řízením energetických systémů.
+\subsubsection{Současné metody měření spotřeby}
+
+Techniky měření spotřeby energie prošly v posledních dekádách zásadní evolucí, která odráží širší transformaci energetických systémů směrem k digitalizaci a inteligentnímu řízení. Zatímco tradiční indukční elektroměry poskytovaly pouze kumulativní údaje o odběru, současné digitální a chytré měřicí technologie umožňují detailní monitorování spotřeby v reálném čase, a to s vysokou granularitou a možností obousměrné komunikace. Tyto sofistikované systémy nejenže zpřesňují samotné měření, ale zároveň otevírají prostor pro pokročilé analytické postupy, predikci zatížení a integraci obnovitelných zdrojů. V následující podkapitole se proto zaměříme na současné metody měření spotřeby, jejich technické principy a význam pro efektivní řízení energetických procesů.
+
+Publikace \textit{The History of the Electricity Meter} od Synergy BV (2006) ukazuje, že vývoj měřicích technologií prošel zásadní proměnou od jednoduchých indukčních elektroměrů až po dnešní digitální a chytré systémy. Zatímco původní přístroje poskytovaly pouze kumulativní údaje o spotřebě, současné metody umožňují detailní sledování odběru v reálném čase, obousměrnou komunikaci s distribuční sítí a integraci do konceptu inteligentních sítí (smart grids). Tyto moderní technologie tak nejen zpřesňují samotné měření, ale stávají se klíčovým zdrojem dat pro optimalizaci provozu, predikci zatížení a podporu rozhodování na různých úrovních energetického systému.
+
+\subsubsection{Přístroje pro měření spotřeby energie}
+
+Ozoh et al. (2019) ukazují, že současné metody měření spotřeby energie zahrnují nejen klasické elektroměry, ale i zařízení na úrovni jednotlivých spotřebičů a pokročilé průmyslové analyzátory. Důraz kladou na to, že moderní přístroje poskytují detailní a víceúrovňová data, která lze využít pro optimalizaci spotřeby, detekci anomálií a integraci do inteligentních sítí.
+
+\textbf{Tabulka 2 – Přístroje pro měření spotřeby energie podle Ozoh et al.}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{3.2cm}|p{4.5cm}|p{3.7cm}|p{3.7cm}|p{3.7cm}|}
+\hline
+\textbf{Typ zařízení} & \textbf{Charakteristika} & \textbf{Výhody} & \textbf{Nevýhody} & \textbf{Typické využití} \\ \hline
+
+Tradiční elektroměry (mechanické/indukční) &
+Rotující kotouč, mechanický odečet, měří kumulativní spotřebu &
+Jednoduchost, dlouhá životnost &
+Nízká přesnost, žádná možnost detailní analýzy &
+Domácnosti a podniky v minulosti \\ \hline
+
+Digitální elektroměry &
+Elektronické zpracování, displej, ukládání dat v digitální podobě &
+Vyšší přesnost, snadný odečet &
+Omezená interaktivita &
+Moderní domácnosti \\ \hline
+
+Chytré elektroměry (Smart Meters) &
+Obousměrná komunikace, reálný čas, integrace do smart grids &
+Detailní časové řady, vzdálený odečet, podpora řízení spotřeby &
+Vyšší pořizovací cena, nutnost infrastruktury &
+Inteligentní sítě, městské celky, průmysl \\ \hline
+
+Plug-in měřiče spotřeby (appliance-level meters) &
+Malé přístroje zapojené mezi zásuvku a spotřebič &
+Snadné použití, detailní měření konkrétního zařízení &
+Omezené na jednotlivé spotřebiče &
+Domácnosti, testování spotřeby \\ \hline
+
+Pokročilé průmyslové analyzátory energie &
+Sledují spotřebu i kvalitu energie (napětí, proud, účiník, harmonické složky) &
+Komplexní monitoring, odhalování anomálií &
+Vyšší cena, složitější instalace &
+Průmyslové provozy, velké budovy \\ \hline
+
+Bezdrátové monitorovací systémy (IoT senzory) &
+Síť senzorů propojených bezdrátově, sběr dat v reálném čase &
+Flexibilita, možnost integrace do chytrých systémů &
+Potřeba robustní infrastruktury, kybernetická bezpečnost &
+Smart homes, průmyslové aplikace \\ \hline
+\end{tabular}
+
+\vspace{0.2cm}
+
+\small{Zdroj: Vlastní zpracování dle Ozoh et al. (2019)}
+\end{table}
+Přehled uvedených přístrojů ukazuje, že současné metody měření spotřeby energie se vyznačují vysokou variabilitou – od tradičních elektroměrů přes digitální systémy až po sofistikované chytré technologie a průmyslové analyzátory. Společným jmenovatelem je posun od pouhého odečtu k detailnímu monitoringu a obousměrné komunikaci, která poskytuje datový základ pro optimalizaci, predikci i strategické rozhodování. Tyto přístroje tak potvrzují, že měření spotřeby se stalo nedílnou součástí moderního energetického managementu.
+
 
 \section{Použití metod strojového učení pro analýzu časových řad}
+Energetická data jsou klíčovým prvkem moderní energetiky. Umožňují nejen sledovat spotřebu, ale především ji řídit, předvídat a optimalizovat. V kontextu strojového učení mají zásadní význam, protože poskytují časové řady, na jejichž základě lze klasifikovat objekty, predikovat budoucí spotřebu a navrhovat efektivní strategie pro integraci obnovitelných zdrojů \cite{SternerStadler2019}.
+
 \subsection{Pojem časové řady a její charakteristiky}
+Časové řady představují zvláštní typ dat, jejichž podstatou je sledování hodnot v čase.
+Na rozdíl od běžných statistických souborů, kde pořadí jednotlivých pozorování nehraje roli,
+zde časová posloupnost určuje význam i interpretaci. Každý záznam je výsledkem předchozího
+vývoje a současně ovlivňuje budoucí hodnoty, což z časových řad činí klíčový nástroj pro analýzu
+dynamických jevů, od ekonomických ukazatelů přes energetickou spotřebu až po demografické
+či klimatické procesy.
+
+\textit{Prince (2023)} tento rámec rozšiřuje tím, že časové řady označuje za typ sekvenčních dat,
+jejichž hlavní charakteristikou je vzájemná provázanost jednotlivých prvků. Právě tato závislost
+odlišuje časové řady od jiných datových struktur a vysvětluje, proč se staly středem zájmu moderních metod strojového učení.
+V následující části budou proto vymezeny jejich základní komponenty, které tvoří východisko
+pro pokročilé modelování a predikci.
+
+Klasická statistická literatura vymezuje časové řady prostřednictvím jejich základních komponent –
+trendu, sezónnosti, cykličnosti a náhodné složky. Jak ukazují \textit{Box a Jenkins (1976)} ve své
+metodologii modelování časových řad, právě identifikace těchto prvků je nezbytným předpokladem
+pro konstrukci vhodných predikčních modelů, zejména typu ARIMA. Podobně \textit{Hamilton (1994)}
+zdůrazňuje, že rozlišení systematických a náhodných složek časové řady umožňuje lépe porozumět
+dynamice sledovaného jevu a oddělit dlouhodobé trendy od krátkodobých fluktuací. Tento rámec
+tvoří východisko pro pokročilé modelování a predikci, které se v současnosti stále častěji opírá
+o metody strojového učení a hlubokých neuronových sítí.
+
+\textit{Prince (2023)} dále zdůrazňuje, že časové řady jsou typickým příkladem sekvenčních dat,
+tedy dat, u nichž pořadí jednotlivých hodnot hraje zásadní roli. Na rozdíl od klasického statistického
+přístupu (Box–Jenkins, Hamilton), který pracuje s komponentami jako trend, sezónnost či cykličnost,
+Prince se soustředí na to, jak tyto závislosti mezi prvky zachytit pomocí metod hlubokého učení.
+
+Rekurentní neuronové sítě (RNN) představují první architekturu schopnou pracovat se sekvenčními
+daty, tedy i s časovými řadami. Jejich princip spočívá v tom, že každý výstup závisí nejen na aktuálním
+vstupu, ale také na předchozím stavu sítě, což jim umožňuje uchovávat informaci o minulých hodnotách
+a využívat ji při predikci. \textit{Prince (2023)} zdůrazňuje, že RNN dokáží zachytit krátkodobé závislosti
+mezi jednotlivými prvky sekvence, a proto se osvědčily při modelování jevů, kde hraje roli bezprostřední
+minulost. Zároveň však upozorňuje na jejich zásadní omezení: při práci s dlouhými sekvencemi dochází
+k postupnému vyhasínání gradientů během procesu učení, což vede k tomu, že síť „zapomíná“
+vzdálenější kontext. Tento problém, známý jako \textit{vanishing gradient}, výrazně omezuje schopnost RNN
+uchovávat dlouhodobé informace a činí je nevhodnými pro predikce, kde je nutné zohlednit trend
+či sezónní vzorce. Právě tato slabina otevřela cestu k vývoji pokročilejších architektur, jako jsou LSTM
+a GRU, které dokáží dlouhodobé závislosti zachytit mnohem efektivněji.
+
+Na omezení klasických rekurentních neuronových sítí reaguje vývoj pokročilejších architektur,
+které dokáží uchovávat informace i přes dlouhé časové intervaly. \textit{Prince (2023)} vysvětluje,
+že sítě typu Long Short-Term Memory (LSTM) zavádějí mechanismus tzv. bran, jež regulují tok informací.
+Díky nim může síť rozhodovat, které údaje si ponechá v paměti, které zapomene a které využije
+pro výpočet aktuálního výstupu. Tento princip umožňuje modelovat dlouhodobé závislosti, které jsou
+pro časové řady zásadní, například sezónní cykly nebo dlouhodobé trendy ve spotřebě energie.
+Podobně fungují i Gated Recurrent Units (GRU), které představují zjednodušenou variantu LSTM,
+avšak s obdobnou schopností pracovat s rozsáhlým kontextem. Prince zdůrazňuje, že právě tyto
+architektury se staly standardem pro predikci časových řad, protože dokáží překonat problém
+vyhasínajících gradientů a poskytují robustní rámec pro modelování komplexních dynamických procesů.
+
+Na architektury LSTM a GRU navazuje další zásadní posun v práci se sekvenčními daty, modely typu
+\textit{Transformer}. \textit{Prince (2023)} zdůrazňuje, že tyto sítě opouštějí princip rekurence a místo toho
+využívají mechanismus pozornosti (\textit{attention}), který umožňuje modelu dynamicky určovat, jakou váhu
+mají jednotlivé prvky sekvence vůči sobě navzájem. Díky tomu dokáží efektivně zachytit i velmi dlouhé
+závislosti, aniž by trpěly problémem vyhasínajících gradientů, který limitoval klasické RNN.
+Transformery tak poskytují flexibilní rámec, v němž lze modelovat komplexní vztahy mezi hodnotami
+časové řady, a to bez ohledu na jejich vzdálenost v čase. Prince ukazuje, že tato architektura se stala
+současným vrcholem v analýze sekvenčních dat a její využití se rychle rozšířilo z oblasti zpracování
+přirozeného jazyka do dalších domén, včetně predikce ekonomických ukazatelů, modelování energetické
+spotřeby či analýzy biologických signálů.
+
+Vývoj metod hlubokého učení pro analýzu časových řad lze podle \textit{Prince (2023)} chápat jako postupné
+překonávání limitů jednotlivých architektur. Rekurentní neuronové sítě (RNN) představovaly první krok,
+protože dokázaly zachytit krátkodobé závislosti mezi prvky sekvence. Je jejich slabinou však byla
+neschopnost uchovávat dlouhodobý kontext, způsobená problémem vyhasínajících gradientů. Na tuto
+nedostatečnost reagovaly architektury LSTM a GRU, které díky paměťovým mechanismům dokázaly
+uchovávat informace přes delší časové intervaly a staly se standardem pro predikci časových řad.
+Nejnovější posun pak představují modely typu Transformer, které opouštějí rekurenci a využívají
+mechanismus pozornosti. Ten umožňuje efektivně modelovat i velmi dlouhé sekvence a zachytit
+komplexní vztahy mezi hodnotami časové řady. Prince tak ukazuje, že vývoj od RNN přes LSTM/GRU
+až k Transformerům odráží snahu postupně překonávat omezení předchozích přístupů a vytvářet stále
+robustnější rámec pro analýzu sekvenčních dat
+
 \subsection{Popis perspektivních modelů strojového učení vzhledem k datům}
