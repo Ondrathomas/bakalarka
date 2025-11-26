@@ -1,4 +1,4 @@
- %volby: 
+%volby: 
 % male × female
 % czech × english (zatím funguje jen czech)
 % a studijní program / obor 
@@ -18,6 +18,14 @@
 \usepackage{longtable}
 \usepackage{afterpage}
 \usepackage{microtype}  % přesnější typografie
+\usepackage{tabularx} % Pro řízení šířky tabulky
+\usepackage{booktabs} % Pro lepší horizontální linky
+\usepackage{multirow}
+\usepackage{ragged2e}
+
+\usepackage{n
+=
+
 
 % workaround for imcompatibility of czech babel and biblatex
 \makeatletter
@@ -89,9 +97,9 @@
 \newcommand{\nazeven}{\ZT{Energy Consumption Analysis Using Machine Learning Methods}}     % zde VYPLŇTE anglický název práce (přesně podle zadání!)
 \newcommand{\autor}{\ZT{Ondřej Thomas}}           % zde VYPLŇTE své jméno a příjmení
 \newcommand{\rok}{\the\year}                
-\newcommand{\vedouci}{\ZT{Ing. Roman Vaibar, Ph.D., MBA}}         
+\newcommand{\vedouci}{\ZT{Kubera Petr, RNDr. Ph.D.}}         
 % zde VYPLŇTE jméno a příjmení vedoucího práce, včetně titulů
-\newcommand{\vedouciDAT}{\ZT{Ing. Romanu Vaibarovi, Ph.D., MBA}}   
+\newcommand{\vedouciDAT}{\ZT{Petru Kuberovi, RNDr. Ph.D.}}   
 % zde VYPLŇTE jméno a příjmení vedoucího práce, včetně titulů ve třetím pádě
                                                            
 
@@ -241,28 +249,17 @@ This bachelor’s thesis focuses on the comparison of open-source and commercial
 
 \addchap{Úvod}
 
+\include{teoreticka_cast}
 
-\chapter{Přehled současného stavu problematiky}
-
-\section{Rešerše v oblasti datových skladů, OLAP technologií a nástrojů pro vizualizaci dat}
-
-\section{Přehled současných open-source a komerčních řešení}
+\include{prakticka_cast}
 
 
-% \subsection{Podsekce}
-% Podsekce se už používají méně často a běžně se vyskytují i dále nečleněné sekce. Nejsou číslovány a nejsou zobrazeny v obsahu. Rozsah by měl být alespoň dva odstavce.
 
-%\subsubsection{Podpodsekce}
-%Podpodsekce se používají jen velmi zřídka, typicky jen u kapitol či sekcí popisující systémy s výraznou hierarchií. Tvořeny mohou být i jediným odstavcem (nikoliv však ale jedinou řádku, zde zvažte spíš použití definičního výčtu).
+ \subsection{Podsekce}
+ Podsekce se už používají méně často a běžně se vyskytují i dále nečleněné sekce. Nejsou číslovány a nejsou zobrazeny v obsahu. Rozsah by měl být alespoň dva odstavce.
 
-\section{analýza trendů v implementaci}
-
-
-\chapter{Teoretická část}
-
-Při tvorbě bakalářské práce byste měli dodržovat základní zásady typografie. Bakalářská práce by měla být přehledná a dobře čitelná. A možná i krásná (uvědomuji si, že krása je subjektivní).
-
-\section{Úvod do problematiky datových skladů a OLAP}
+\subsubsection{Podpodsekce}
+Podpodsekce se používají jen velmi zřídka, typicky jen u kapitol či sekcí popisující systémy s výraznou hierarchií. Tvořeny mohou být i jediným odstavcem (nikoliv však ale jedinou řádku, zde zvažte spíš použití definičního výčtu).
 
 
 V šabloně je využita rodina písma \textit{Libertinus} (odvozená z písma \textit{Linux Libertine}) s výjimkou neproporcionálního písmo, pro něž bylo zvoleno písmo \textit{Source Code Pro}, které podporuje výrazně větší počet řezů (kurzíva tučné).
