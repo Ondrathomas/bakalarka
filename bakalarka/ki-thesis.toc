@@ -1,48 +1,52 @@
 \babel@toc {czech}{}\relax 
 \contentsline {chapter}{\nonumberline Úvod}{13}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Teoretická část}{15}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Úvod do problematiky analýzy spotřeby energie}{15}{section.1.1}%
-\contentsline {subsubsection}{\nonumberline Význam a využití energetických dat}{15}{subsubsection*.4}%
-\contentsline {paragraph}{\nonumberline Optimalizací provozu}{15}{paragraph*.6}%
-\contentsline {paragraph}{\nonumberline Predikcí zatížení sítí}{15}{paragraph*.8}%
-\contentsline {paragraph}{\nonumberline Integrací obnovitelných zdrojů}{16}{paragraph*.10}%
-\contentsline {paragraph}{\nonumberline Podporou rozhodování}{16}{paragraph*.12}%
-\contentsline {subsubsection}{\nonumberline Současné metody měření spotřeby}{17}{subsubsection*.14}%
-\contentsline {subsubsection}{\nonumberline Současné metody měření spotřeby}{19}{subsubsection*.16}%
-\contentsline {subsubsection}{\nonumberline Přístroje pro měření spotřeby energie}{19}{subsubsection*.18}%
-\contentsline {section}{\numberline {1.2}Použití metod strojového učení pro analýzu časových řad}{20}{section.1.2}%
-\contentsline {subsection}{\nonumberline Pojem časové řady a její charakteristiky}{20}{subsection*.20}%
-\contentsline {subsection}{\nonumberline Popis perspektivních modelů strojového učení vzhledem k datům}{22}{subsection*.22}%
-\contentsline {chapter}{\numberline {2}Praktická část}{25}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Analýza dostupných řešení}{25}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Přehled a srovnání existujících systémů pro určení charakteru objektů z energetické spotřeby}{25}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Návrh a implementace prototypu systému pro určení charakteru objektů z energetické spotřeby}{25}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Návrh vhodných příznaků z energetických dat}{25}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Vytvoření a trénování klasifikačního modelu}{25}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Testování a vyhodnocení výsledků}{25}{section.2.6}%
-\contentsline {subsection}{\nonumberline Podsekce}{26}{subsection*.24}%
-\contentsline {subsubsection}{\nonumberline Podpodsekce}{26}{subsubsection*.26}%
-\contentsline {chapter}{\numberline {3}Praktická část}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Návrh metodiky porovnání}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Příprava dat a návrh datového skladu}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Provedení srovnávací analýzy}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Zhodnocení výsledků}{27}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Sazba ukázek kódu}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Citace}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Označování citací}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Bibliografický záznam}{33}{section.5.2}%
-\contentsline {subsection}{\nonumberline Tištěné samostatné dokumenty neperiodické}{34}{subsection*.28}%
-\contentsline {subsection}{\nonumberline Online samostatné dokumenty neperiodické}{35}{subsection*.30}%
-\contentsline {subsection}{\nonumberline Dílčí tištěné dokumenty}{36}{subsection*.32}%
-\contentsline {subsection}{\nonumberline Dílčí online dokumenty}{37}{subsection*.34}%
-\contentsline {section}{\numberline {5.3}Často kladené otázky}{37}{section.5.3}%
-\contentsline {subsection}{\nonumberline Co není potřeba citovat?}{37}{subsection*.36}%
-\contentsline {subsection}{\nonumberline Jak citovat informace z (podnikových) školení}{38}{subsection*.38}%
-\contentsline {subsection}{\nonumberline Jak citovat ústní sdělení?}{38}{subsection*.40}%
-\contentsline {subsection}{\nonumberline Je možno citovat Wikipedii?}{38}{subsection*.42}%
-\contentsline {chapter}{\numberline {6}Zhodnocení}{41}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Závěr}{43}{chapter.7}%
+\contentsline {chapter}{\numberline {1}Úvod do problematiky analýzy spotřeby energie}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Význam a využití energetických dat}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Současné metody měření spotřeby}{16}{section.1.2}%
+\contentsline {chapter}{\numberline {2}popis dat a jejich struktura}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Data o spotřebě energie}{19}{section.2.1}%
+\contentsline {subsection}{\nonumberline elekroměry}{20}{subsection*.4}%
+\contentsline {subsection}{\nonumberline druhy elektroměrů}{21}{subsection*.6}%
+\contentsline {subsection}{\nonumberline Struktura popisu a sběru dat}{23}{subsection*.8}%
+\contentsline {section}{\numberline {2.2}použití metod strojového učení pro analýzy časových řad}{24}{section.2.2}%
+\contentsline {subsection}{\nonumberline pojem časové řady a její charakteristiky}{24}{subsection*.10}%
+\contentsline {subsection}{\nonumberline Popis perspektivních modelů strojového učení vzhledem k datům}{26}{subsection*.12}%
+\contentsline {chapter}{\numberline {3}Praktická část}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Analýza dostupných řešení}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Přehled a srovnání existujících systémů pro určení charakteru objektů z energetické spotřeby}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Návrh a implementace prototypu systému pro určení charakteru objektů z energetické spotřeby}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Návrh vhodných příznaků z energetických dat}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Vytvoření a trénování klasifikačního modelu}{29}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Testování a vyhodnocení výsledků}{29}{section.3.6}%
+\contentsline {subsection}{\nonumberline Podsekce}{30}{subsection*.14}%
+\contentsline {subsubsection}{\nonumberline Podpodsekce}{30}{subsubsection*.16}%
+\contentsline {chapter}{\numberline {4}Praktická část}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Návrh metodiky porovnání}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Příprava dat a návrh datového skladu}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Provedení srovnávací analýzy}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Zhodnocení výsledků}{31}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Sazba ukázek kódu}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Citace}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Označování citací}{36}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Bibliografický záznam}{37}{section.6.2}%
+\contentsline {subsection}{\nonumberline Tištěné samostatné dokumenty neperiodické}{38}{subsection*.18}%
+\contentsline {subsection}{\nonumberline Online samostatné dokumenty neperiodické}{39}{subsection*.20}%
+\contentsline {subsection}{\nonumberline Dílčí tištěné dokumenty}{40}{subsection*.22}%
+\contentsline {subsection}{\nonumberline Dílčí online dokumenty}{41}{subsection*.24}%
+\contentsline {section}{\numberline {6.3}Často kladené otázky}{41}{section.6.3}%
+\contentsline {subsection}{\nonumberline Co není potřeba citovat?}{41}{subsection*.26}%
+\contentsline {subsection}{\nonumberline Jak citovat informace z (podnikových) školení}{42}{subsection*.28}%
+\contentsline {subsection}{\nonumberline Jak citovat ústní sdělení?}{42}{subsection*.30}%
+\contentsline {subsection}{\nonumberline Je možno citovat Wikipedii?}{42}{subsection*.32}%
+\contentsline {chapter}{\numberline {7}Zhodnocení}{45}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Závěr}{47}{chapter.8}%
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
 \def \@chapapp {\appendixname }
-\contentsline {chapter}{\numberline {A}Externí přílohy}{45}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Další přílohy}{47}{appendix.B}%
+\contentsline {chapter}{\numberline {A}Externí přílohy}{51}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Další přílohy}{53}{appendix.B}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

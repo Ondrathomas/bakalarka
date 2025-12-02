@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber ki-thesis"] 0 "ki-thesis.bcf" "ki-thesis.bbl" "ki-thesis" 0 -1
-  "ki-thesis.bcf" 1764181753 108715 e34a5d30c99e65a27f4938e5c018cceb "pdflatex"
-  "thesis.bib" 1764088658 938 e3fba1f81a0569f594d99132a4f5801a ""
+["biber ki-thesis"] 1764705108.12327 "ki-thesis.bcf" "ki-thesis.bbl" "ki-thesis" 1764705117.07835 0
+  "ki-thesis.bcf" 1764705116 110838 2806e79728dac3d3edaf2d51ce0c37b3 "pdflatex"
+  "thesis.bib" 1764704825 3590 380af8f15b7dd0c774343f889ccbe51c ""
   (generated)
   "ki-thesis.bbl"
   "ki-thesis.blg"
   (rewritten before read)
-["pdflatex"] 1764181751.13888 "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" "ki-thesis.pdf" "ki-thesis" 1764181753.98514 2
+["pdflatex"] 1764705114.1527 "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" "ki-thesis.pdf" "ki-thesis" 1764705117.07918 2
   "C:/Users/ondra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764173536 185372 45a621f7d88176d1db3e2b90ef8b522a ""
   "C:/Users/ondra/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1764172499 13316677 c5f3732ecddba156458264f9d4ea23c2 ""
   "C:/mixtex/fonts/enc/dvips/libertinus-type1/lbn1_75t36g.enc" 1727020299 3035 7d37ee7011b797a1b8ca3680e8da3d4d ""
@@ -135,6 +135,7 @@
   "C:/mixtex/tex/latex/graphics-def/pdftex.def" 1762694372 19626 23e2822b9b2b5005f4c549ca98b9334d ""
   "C:/mixtex/tex/latex/graphics/color.sty" 1749322634 7245 a7e8457a46cda4920df85d975267efb4 ""
   "C:/mixtex/tex/latex/graphics/graphics.sty" 1749322634 18363 69bb4f5538964bfea50d1e6d89cbe69f ""
+  "C:/mixtex/tex/latex/graphics/graphicx.sty" 1749322634 8118 43b99e52946c33a23f5f43b52d5cc5ec ""
   "C:/mixtex/tex/latex/graphics/keyval.sty" 1749322634 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
   "C:/mixtex/tex/latex/graphics/mathcolor.ltx" 1749322634 2885 9c645d672ae17285bba324998918efd8 ""
   "C:/mixtex/tex/latex/graphics/trig.sty" 1749322634 4023 e66acf578d6b564c4670fb57ff336a7a ""
@@ -190,16 +191,19 @@
   "C:/mixtex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/mixtex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "LOGO_PRF_CZ_RGB_standard.jpg" 1764088658 68207 90135c26da1c81d9e05374386a905769 ""
-  "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" 1764175069 35732 aaccbac296f0ed02e3de1efc66d38674 ""
-  "ki-thesis.aux" 1764181753 15326 a9cf054a5963525629a73e656a04099b "pdflatex"
-  "ki-thesis.bbl" 1764175081 486 76d65a242ec496c9b4361af646ff12cb "biber ki-thesis"
-  "ki-thesis.tex" 1764175069 35732 aaccbac296f0ed02e3de1efc66d38674 ""
-  "ki-thesis.toc" 1764181753 4377 64e487368cf1cc86e23b3d3d1285c209 "pdflatex"
+  "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" 1764704934 35740 848a1602d8eff7f208e674915e118432 ""
+  "elektromer_1.png" 0 -1 0 ""
+  "elektromer_2.png" 0 -1 0 ""
+  "elektromer_3.png" 0 -1 0 ""
+  "ki-thesis.aux" 1764705116 19175 23fc6a30f62ae5608b89c697cabf3646 "pdflatex"
+  "ki-thesis.bbl" 1764705110 6465 213be438191fb34146f8f66108c45d26 "biber ki-thesis"
+  "ki-thesis.tex" 1764704934 35740 848a1602d8eff7f208e674915e118432 ""
+  "ki-thesis.toc" 1764705116 4298 f810bcce74693e82d8d3baa463135853 "pdflatex"
   "kitheses.cls" 1764088658 2587 9561996a4af1ad19a1771c7d967fe489 ""
-  "prakticka_cast.aux" 1764181753 5197 c70f5c6c38bf28dac0586cd2337728c3 "pdflatex"
+  "prakticka_cast.aux" 1764705116 5198 bbb35a45bd3373c710025f8f58f870d9 "pdflatex"
   "prakticka_cast.tex" 1764088658 463 9a2809fb1d266cfbaae4d37d7dd6eaa3 ""
-  "teoreticka_cast.aux" 1764181753 5968 f29de545988b015750b4360d38aa48a3 "pdflatex"
-  "teoreticka_cast.tex" 1764165127 28815 9e3e76f7fca83cb8d7d7194918496579 ""
+  "teoreticka_cast.aux" 1764705116 6590 39d61613b43f01dd84612f39e6dea9aa "pdflatex"
+  "teoreticka_cast.tex" 1764705106 33803 dad51e026a44aa264c4c58d8a8976b20 ""
   (generated)
   "ki-thesis.aux"
   "ki-thesis.bcf"
@@ -210,3 +214,5 @@
   "prakticka_cast.aux"
   "teoreticka_cast.aux"
   (rewritten before read)
+  "prakticka_cast.aux"
+  "teoreticka_cast.aux"

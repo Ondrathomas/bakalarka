@@ -16,5 +16,161 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Prince2023}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=28ec62e6a6756d1310f22aa92ac3f433}{%
+           family={Prince},
+           familyi={P\bibinitperiod},
+           given={Simon\bibnamedelimb J.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{bibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorbibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authornamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-262-04864-4}
+      \field{title}{Understanding deep learning}
+      \field{year}{[2023]}
+    \endentry
+    \entry{Raschka2017}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bb679961e3f3f4bba79fc1cf3aa7df1c}{%
+           family={Raschka},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ea5b3d38b4b9dc9c54ee2a9c3d6c7437}{%
+           family={Mirjalili},
+           familyi={M\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{fullhash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{fullhashraw}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{bibnamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorbibnamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authornamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorfullhash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorfullhashraw}{70b021b69c6a4d9d9ffa597a634487d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edition}
+      \field{isbn}{978-1-78712-593-3}
+      \field{subtitle}{machine learning and deep learning with Python, scikit-learn, and TensorFlow}
+      \field{title}{Python machine learning}
+      \field{year}{2017}
+    \endentry
+    \entry{Ma2017}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=9dd215db511b070b621286a0b1fa4c4e}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Zhanyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0a05f4ce7256a912d648b906297a9092}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Jiyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ff5e51097bdb97ec131b7b9f7b233435}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hailong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7991ff813e514e09214991724205c003}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Qie},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=a972e16d54c8eddad04f4085ae352551}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Zhongwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9b3f2d487505aaac965d701470080bd3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jianhua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=febec431d07cf7e676489756ac13c50a}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{fullhash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{fullhashraw}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{bibnamehash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{authorbibnamehash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{authornamehash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{authorfullhash}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \strng{authorfullhashraw}{de8a69c73c3ec87cda598ec0c505aeb1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0890-8044}
+      \field{journaltitle}{IEEE Network}
+      \field{number}{5}
+      \field{title}{The Role of Data Analysis in the Development of Intelligent Energy Networks}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{88\bibrangedash 95}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/mnet.2017.1600319
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8053484
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8053484
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{BoxJenkins1976}
+  \missing{CSU2023}
+  \missing{Hamilton1994}
+  \missing{SmartMeteringCR2022}
+  \missing{SternerStadler2019}
+  \missing{Synergy2006}
+  \missing{TypyElektromeruND}
+  \missing{ViteJakFungujeElektromer2021}
+\endrefsection
 \endinput
 
