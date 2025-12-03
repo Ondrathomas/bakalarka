@@ -23,6 +23,7 @@
 \usepackage{multirow}
 \usepackage{ragged2e}
 \usepackage{graphicx}
+\usepackage{float}
 
 
 
@@ -32,7 +33,7 @@
 \makeatletter
 \newcommand{\fail}{} % opraví volání \fail při patchování jazyků
 \makeatother
-
+\setcounter{secnumdepth}{3}  % číslovat až do úrovně subsubsection
 
 \iftutex
 \else
