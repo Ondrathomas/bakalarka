@@ -1,4 +1,4 @@
-%volby: 
+ %volby: 
 % male × female
 % czech × english (zatím funguje jen czech)
 % a studijní program / obor 
@@ -22,10 +22,9 @@
 \usepackage{booktabs} % Pro lepší horizontální linky
 \usepackage{multirow}
 \usepackage{ragged2e}
+\usepackage{natbib} 
 \usepackage{graphicx}
 \usepackage{float}
-
-
 
 
 
@@ -34,6 +33,7 @@
 \newcommand{\fail}{} % opraví volání \fail při patchování jazyků
 \makeatother
 \setcounter{secnumdepth}{3}  % číslovat až do úrovně subsubsection
+
 
 \iftutex
 \else
@@ -44,7 +44,7 @@
 \patchcmd\select@language{-}{\my@hyphen }{}{\fail}
 \patchcmd\select@language{'}{\my@apostroph }{}{\fail}
 \makeatother
-\fi
+
 
 % fonty lze měnit (detaily viz sekce fonty)
 \iftutex
@@ -101,7 +101,7 @@
 \newcommand{\rok}{\the\year}                
 \newcommand{\vedouci}{\ZT{Kubera Petr, RNDr. Ph.D.}}         
 % zde VYPLŇTE jméno a příjmení vedoucího práce, včetně titulů
-\newcommand{\vedouciDAT}{\ZT{Petru Kuberovi, RNDr. Ph.D.}}   
+\newcommand{\vedouciDAT}{\ZT{Petru Kuberovi, Ph.D.}}   
 % zde VYPLŇTE jméno a příjmení vedoucího práce, včetně titulů ve třetím pádě
                                                            
 
@@ -231,9 +231,8 @@ hledání efektivních řešení a k celkovému úspěšnému dokončení bakal�
 
 \textbf{Abstrakt:}
 
-Bakalářská práce se zabývá srovnáním open-source a komerčních nástrojů pro vizualizaci a analýzu dat, datové sklady a OLAP technologie s cílem zhodnotit jejich vhodnost pro využití v datové platformě Portabo. V praktické části byla realizována implementace několika variant datových řešení, zahrnujících kombinace databázových systémů MSSQL, MariaDB, ClickHouse a PostgreSQL s nástroji Power BI, Superset a Cube.js. Bylo provedeno testování výkonu, analýza technických požadavků, nároků na uživatelské dovednosti a srovnání ekonomických aspektů provozu. Výsledkem práce je komplexní přehled výhod a nevýhod jednotlivých přístupů, měření jejich efektivity při zpracování velkých objemů dat a doporučení optimálního řešení pro organizace usilující o efektivní datovou analytiku bez nutnosti vysoké IT expertizy.
 
-\textbf{Klíčová slova:} Business Intelligence, datové sklady, olap, vizualizace dat, Portabo
+\textbf{Klíčová slova:} 
 
 
 \bigskip
@@ -243,10 +242,8 @@ Bakalářská práce se zabývá srovnáním open-source a komerčních nástroj
 
 \textbf{Abstract:}
 
-This bachelor’s thesis focuses on the comparison of open-source and commercial tools for data visualization and analysis, data warehouses, and OLAP technologies, with the aim of evaluating their applicability within the Portabo data platform. In the practical part, several data architecture variants were implemented, combining database systems such as MSSQL, MariaDB, ClickHouse, and PostgreSQL with visualization tools including Power BI, Superset, and Cube.js. The analysis covers performance testing, technical requirements, user skill demands, and economic aspects of operation. The outcome of the thesis is a comprehensive overview of the advantages and limitations of both open-source and commercial solutions, performance evaluation on large data volumes, and recommendations for organizations seeking efficient data analytics without requiring extensive IT expertise.
 
-\textbf{Keywords:} Business Intelligence, data warehouses, OLAP, data visualization, Portabo
-
+\textbf{Keywords:} 
 \tableofcontents
 
 \addchap{Úvod}
@@ -544,7 +541,10 @@ Z Wikipedie rozhodně necitujte články věnované běžně známým technologi
 Závěr je klíčovou kapitolou, která může nejvíce ovlivnit vaši obhajobu. Základní částí závěru je přehledné shrnutí výstupů práce tj. co jste udělali pro dasažení cílů práce. Je nutné se vyhnout hodnocení, zda tím byli splněny cíle práce, či nikoliv (to je úkol posudků a především komise).
 
 \sloppy
+\section*{Seznam použité literatury}
+\printbibliography
 \printbibliography[title=Seznam použitých zdrojů]
+
 
 \appendix
 
@@ -584,4 +584,3 @@ Všechny tyto soubory jsou potřeba pro překlad dokumentu (logo stačí jedno v
 Výjimečně může práce obsahovat i další tištěné přílohy. Obecně však dávejte přednost elektronickým přílohám umístěným na GitHubu (tato kapitola tak bude úplně chybět). 
 
 \end{document}
-
