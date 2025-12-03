@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber ki-thesis"] 1764705108.12327 "ki-thesis.bcf" "ki-thesis.bbl" "ki-thesis" 1764705117.07835 0
-  "ki-thesis.bcf" 1764705116 110838 2806e79728dac3d3edaf2d51ce0c37b3 "pdflatex"
+["biber ki-thesis"] 0 "ki-thesis.bcf" "ki-thesis.bbl" "ki-thesis" 1764754679.29691 -1
+  "ki-thesis.bcf" 1764754678 110557 1df9963361c3f4c5aab21357697d1596 "pdflatex"
   "thesis.bib" 1764704825 3590 380af8f15b7dd0c774343f889ccbe51c ""
   (generated)
   "ki-thesis.bbl"
   "ki-thesis.blg"
   (rewritten before read)
-["pdflatex"] 1764705114.1527 "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" "ki-thesis.pdf" "ki-thesis" 1764705117.07918 2
+["pdflatex"] 1764754676.47028 "c:/Users/ondra/OneDrive/Plocha/bakalarka/bakalarka/ki-thesis.tex" "ki-thesis.pdf" "ki-thesis" 1764754679.29802 2
   "C:/Users/ondra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764173536 185372 45a621f7d88176d1db3e2b90ef8b522a ""
   "C:/Users/ondra/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1764172499 13316677 c5f3732ecddba156458264f9d4ea23c2 ""
   "C:/mixtex/fonts/enc/dvips/libertinus-type1/lbn1_75t36g.enc" 1727020299 3035 7d37ee7011b797a1b8ca3680e8da3d4d ""
@@ -195,15 +195,15 @@
   "elektromer_1.png" 0 -1 0 ""
   "elektromer_2.png" 0 -1 0 ""
   "elektromer_3.png" 0 -1 0 ""
-  "ki-thesis.aux" 1764705116 19175 23fc6a30f62ae5608b89c697cabf3646 "pdflatex"
-  "ki-thesis.bbl" 1764705110 6465 213be438191fb34146f8f66108c45d26 "biber ki-thesis"
+  "ki-thesis.aux" 1764754678 18897 44a195ab2c70b2ab9fa365af51c06dab "pdflatex"
+  "ki-thesis.bbl" 1764754596 6432 6b92b4ea1887ae131a45002d0ce940fc "biber ki-thesis"
   "ki-thesis.tex" 1764704934 35740 848a1602d8eff7f208e674915e118432 ""
-  "ki-thesis.toc" 1764705116 4298 f810bcce74693e82d8d3baa463135853 "pdflatex"
+  "ki-thesis.toc" 1764754678 4298 f810bcce74693e82d8d3baa463135853 "pdflatex"
   "kitheses.cls" 1764088658 2587 9561996a4af1ad19a1771c7d967fe489 ""
-  "prakticka_cast.aux" 1764705116 5198 bbb35a45bd3373c710025f8f58f870d9 "pdflatex"
+  "prakticka_cast.aux" 1764754678 5198 fe9de6997af8b41dbf4e371fbbe47cef "pdflatex"
   "prakticka_cast.tex" 1764088658 463 9a2809fb1d266cfbaae4d37d7dd6eaa3 ""
-  "teoreticka_cast.aux" 1764705116 6590 39d61613b43f01dd84612f39e6dea9aa "pdflatex"
-  "teoreticka_cast.tex" 1764705106 33803 dad51e026a44aa264c4c58d8a8976b20 ""
+  "teoreticka_cast.aux" 1764754678 6590 c5275b73453b211fb1f2fc6b23aa477c "pdflatex"
+  "teoreticka_cast.tex" 1764754672 33370 c7c33822f39038651c8231f14dadc133 ""
   (generated)
   "ki-thesis.aux"
   "ki-thesis.bcf"

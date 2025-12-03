@@ -136,8 +136,8 @@
       \strng{authornamehash}{de8a69c73c3ec87cda598ec0c505aeb1}
       \strng{authorfullhash}{de8a69c73c3ec87cda598ec0c505aeb1}
       \strng{authorfullhashraw}{de8a69c73c3ec87cda598ec0c505aeb1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0890-8044}
@@ -166,7 +166,6 @@
   \missing{BoxJenkins1976}
   \missing{CSU2023}
   \missing{Hamilton1994}
-  \missing{SmartMeteringCR2022}
   \missing{SternerStadler2019}
   \missing{Synergy2006}
   \missing{TypyElektromeruND}
