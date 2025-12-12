@@ -22,10 +22,18 @@
 \usepackage{booktabs} % Pro lepší horizontální linky
 \usepackage{multirow}
 \usepackage{ragged2e}
-\usepackage{natbib} 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}   % doporučeno místo CP1250
+\usepackage[czech,english]{babel}
 \usepackage{graphicx}
 \usepackage{float}
-
+\usepackage[backend=biber, style=numeric, sorting=nyt]
+\usepackage{biblatex}
+\addbibresource{thesis.bib}
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=\arabic*.} % první úroveň = 1.,2.,3.
+\setlist[enumerate,2]{label=\alph*)}    % druhá úroveň = a), b), c)
 
 
 % workaround for imcompatibility of czech babel and biblatex
@@ -60,12 +68,6 @@
 	\usepackage{libertinus}
 	\renewcommand{\ttdefault}{pxtt}
 \fi
-
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
-\addbibresource{thesis.bib} 
-
-
-
 
 \usepackage{csquotes} % uvozovky
 
@@ -244,9 +246,12 @@ hledání efektivních řešení a k celkovému úspěšnému dokončení bakal�
 
 
 \textbf{Keywords:} 
+
 \tableofcontents
 
-\addchap{Úvod}
+\addchap*{Úvod}   % hvězdička odstraní číslování
+\addcontentsline{toc}{chapter}{Úvod}  % explicitně přidá do obsahu
+
 
 \include{teoreticka_cast}
 
@@ -542,7 +547,6 @@ Závěr je klíčovou kapitolou, která může nejvíce ovlivnit vaši obhajobu.
 
 \sloppy
 \section*{Seznam použité literatury}
-\printbibliography
 \printbibliography[title=Seznam použitých zdrojů]
 
 

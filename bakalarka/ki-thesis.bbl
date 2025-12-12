@@ -16,5 +16,273 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Synergy2006}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=52d5a7c5f1bfd007347501c16a5d2c59}{%
+           family={BV},
+           familyi={B\bibinitperiod},
+           given={SYNERGY},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{fullhash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{fullhashraw}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{bibnamehash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{authorbibnamehash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{authornamehash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{authorfullhash}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \strng{authorfullhashraw}{52d5a7c5f1bfd007347501c16a5d2c59}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{journaltitle}{Smart Energy International}
+      \field{month}{6}
+      \field{note}{[cit. 2025-11-18]}
+      \field{title}{The History of the Electricity Meter}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.smart-energy.com/features-analysis/the-history-of-the-electricity-meter/
+      \endverb
+      \verb{url}
+      \verb https://www.smart-energy.com/features-analysis/the-history-of-the-electricity-meter/
+      \endverb
+    \endentry
+    \entry{CSU2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f7372d0a8f1299aff04a5022e23ea764}{%
+           family={{Český statistický úřad}},
+           familyi={Č\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Praha}%
+      }
+      \list{publisher}{1}{%
+        {ČSÚ}%
+      }
+      \strng{namehash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{fullhash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{fullhashraw}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{bibnamehash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{authorbibnamehash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{authornamehash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{authorfullhash}{f7372d0a8f1299aff04a5022e23ea764}
+      \strng{authorfullhashraw}{f7372d0a8f1299aff04a5022e23ea764}
+      \field{sortinit}{Č}
+      \field{sortinithash}{24c89956ea504ac7c9bf18e41be4d8b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online}
+      \field{note}{[cit. 2025-11-28]}
+      \field{title}{Energetická statistika: Spotřeba paliv a energie}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.czso.cz/csu/czso/energeticka-statistika
+      \endverb
+      \verb{url}
+      \verb https://www.czso.cz/csu/czso/energeticka-statistika
+      \endverb
+    \endentry
+    \entry{CEZ2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=63a404f8de56b5eb573667472d75512d}{%
+           family={{ČEZ}},
+           familyi={Č\bibinitperiod}}}%
+      }
+      \strng{namehash}{63a404f8de56b5eb573667472d75512d}
+      \strng{fullhash}{63a404f8de56b5eb573667472d75512d}
+      \strng{fullhashraw}{63a404f8de56b5eb573667472d75512d}
+      \strng{bibnamehash}{63a404f8de56b5eb573667472d75512d}
+      \strng{authorbibnamehash}{63a404f8de56b5eb573667472d75512d}
+      \strng{authornamehash}{63a404f8de56b5eb573667472d75512d}
+      \strng{authorfullhash}{63a404f8de56b5eb573667472d75512d}
+      \strng{authorfullhashraw}{63a404f8de56b5eb573667472d75512d}
+      \field{sortinit}{Č}
+      \field{sortinithash}{24c89956ea504ac7c9bf18e41be4d8b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online}
+      \field{note}{[cit. 2025-11-29]}
+      \field{title}{Víte, jak funguje elektroměr?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.cez.cz/cs/clanky/vite-jak-funguje-elektromer-157437
+      \endverb
+      \verb{url}
+      \verb https://www.cez.cz/cs/clanky/vite-jak-funguje-elektromer-157437
+      \endverb
+    \endentry
+    \entry{Dobrovolny2006}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=1922316ba0770c13a7e1fd781eb0df45}{%
+           family={Dobrovolný},
+           familyi={D\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Masarykova univerzita}%
+      }
+      \list{location}{1}{%
+        {Brno}%
+      }
+      \strng{namehash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{fullhash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{fullhashraw}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{bibnamehash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{authorbibnamehash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{authornamehash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{authorfullhash}{1922316ba0770c13a7e1fd781eb0df45}
+      \strng{authorfullhashraw}{1922316ba0770c13a7e1fd781eb0df45}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{VIII Analýza časových řad}
+      \field{title}{Statistické metody a zpracování dat}
+      \field{type}{Učební text}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://is.muni.cz/el/1431/podzim2006/Z0069/um/Statistika_8_casove_rady.pdf
+      \endverb
+      \verb{url}
+      \verb https://is.muni.cz/el/1431/podzim2006/Z0069/um/Statistika_8_casove_rady.pdf
+      \endverb
+    \endentry
+    \entry{ET404}{online}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pre.cz}
+      \field{title}{ET404}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.premereni.cz/cs/dulezite-informace/montaz-elektromeru/prehled-instalovanych-elektromeru/et404/
+      \endverb
+      \verb{url}
+      \verb https://www.premereni.cz/cs/dulezite-informace/montaz-elektromeru/prehled-instalovanych-elektromeru/et404/
+      \endverb
+    \endentry
+    \entry{Prince2023}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=28ec62e6a6756d1310f22aa92ac3f433}{%
+           family={Prince},
+           familyi={P\bibinitperiod},
+           given={Simon\bibnamedelimb J.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{bibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorbibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authornamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-262-04864-4}
+      \field{title}{Understanding Deep Learning}
+      \field{year}{2023}
+    \endentry
+    \entry{Raschka2019}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bb679961e3f3f4bba79fc1cf3aa7df1c}{%
+           family={Raschka},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ea5b3d38b4b9dc9c54ee2a9c3d6c7437}{%
+           family={Mirjalili},
+           familyi={M\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{fullhash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{fullhashraw}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{bibnamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorbibnamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authornamehash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorfullhash}{70b021b69c6a4d9d9ffa597a634487d5}
+      \strng{authorfullhashraw}{70b021b69c6a4d9d9ffa597a634487d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third edition}
+      \field{isbn}{978-1-78995-575-0}
+      \field{subtitle}{Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow}
+      \field{title}{Python Machine Learning}
+      \field{year}{2019}
+    \endentry
+    \entry{Sterner2019}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c66a1d6e84e9699ed412395f333b68c7}{%
+           family={Sterner},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f472e0dd70b32140872ee25dbff45e2a}{%
+           family={Stadler},
+           familyi={S\bibinitperiod},
+           given={Ingo},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{fullhash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{fullhashraw}{69b33bd245e2d49954251d8778a37b41}
+      \strng{bibnamehash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{authorbibnamehash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{authornamehash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{authorfullhash}{69b33bd245e2d49954251d8778a37b41}
+      \strng{authorfullhashraw}{69b33bd245e2d49954251d8778a37b41}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1 edition}
+      \field{isbn}{978-3-662-55503-3}
+      \field{subtitle}{Demand, Technologies, Integration}
+      \field{title}{Handbook of Energy Storage}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+  \missing{2025}
+  \missing{BoxJenkins1976}
+  \missing{ENERGIE}
+  \missing{Hamilton1994}
+  \missing{TypyElektromeruND}
+  \missing{prince 2023}
+\endrefsection
 \endinput
 
