@@ -59,36 +59,126 @@ politiky. V jejich pojetí jsou data základním předpokladem pro efektivní fu
 \section{Měření spotřeb elektrické energie}
 
 Techniky měření spotřeby energie se v posledních desetiletích výrazně změnily a tento vývoj souvisí s celkovou proměnou energetických systémů směrem k digitalizaci a chytrému řízení. 
-Zatímco dříve používané indukční elektroměry dokázaly ukázat jen celkový součet spotřeby, dnešní digitální a chytré měřiče umožňují sledovat odběr mnohem detailněji, a to v téměř reálném čase. Navíc dokážou komunikovat obousměrně s distribuční sítí.
+Zatímco dříve používané indukční elektroměry dokázaly ukázat jen celkový součet spotřeby, dnešní digitální a chytré měřiče umožňují sledovat odběr mnohem detailněji, a to v  reálném čase. Navíc dokážou komunikovat obousměrně\footnote{Obousměrná komunikace znamená, že zařízení je schopno nejen odesílat naměřená data (např. spotřebu energie) do distribuční sítě, ale zároveň také přijímat informace či pokyny zpět, například změny tarifů nebo signály pro řízení spotřeby.} s distribuční sítí.
 
-
-
-
-(vysvětlit obousměrnou komunikaci) 
 což otevírá nové možnosti pro práci s energetickými daty. Moderní systémy tak nejen zpřesňují samotné měření, ale zároveň poskytují podklady pro pokročilé analýzy, předpovědi zatížení nebo efektivní zapojení obnovitelných zdrojů do sítě.
-
-Vývoj měřicích technologií prošel velkou proměnou, od jednoduchých indukčních elektroměrů až po dnešní digitální a chytré systémy. Zatímco dříve přístroje poskytovaly jen souhrnný údaj o spotřebě, moderní měřiče dokážou sledovat odběr v~reálném čase, komunikovat s~distribuční sítí a stát se součástí inteligentních sítí. To znamená, že měření už není jen o samotném odečtu, ale o~získávání dat, která pomáhají lépe řídit provoz, předvídat zatížení a rozhodovat na různých úrovních energetického systému. 
+Zatímco dříve přístroje poskytovaly jen souhrnný údaj o spotřebě, moderní měřiče dokážou sledovat odběr v~reálném čase, komunikovat s~distribuční sítí a stát se součástí inteligentních sítí.
 Vývoj měření tak odráží širší změnu celé energetiky, a to od mechanických přístrojů až po dnešní chytré technologie, které mění i způsob práce s daty. Prakticky to lze vidět třeba v~domácnosti: zatímco dříve se spotřeba elektřiny zjistila jen jednou za měsíc při odečtu, dnes chytrý elektroměr nebo aplikace ukáže, kdy je odběr nejvyšší, například večer při vaření nebo při zapnuté pračce. Díky tomu může člověk lépe plánovat používání spotřebičů, snížit náklady a mít větší kontrolu nad energií. 
 Současné přístroje se tak stávají aktivním prvkem inteligentních sítí. Umožňují detailní monitoring, obousměrnou komunikaci a pokročilé analytické využití, což má podle \cite{Synergy2006} zásadní význam pro dnešní praxi i budoucí směřování energetických systémů.
-Moderní měření spotřeby energie už není jen o tom, co ukáže klasický elektroměr na konci měsíce. Dnes se používají chytré měřiče a senzory, které sbírají data průběžně a mnohem přesněji. Díky tomu je vidět, kdy a kde se energie spotřebovává, například zda domácnost nejvíc zatěžuje síť večer při vaření nebo ráno při zapínání spotřebičů. Moderní měření spotřeby energie navíc umí ukázat spotřebu jednotlivých zařízení, takže lze zjistit, kde vznikají zbytečné ztráty. Takto získaná data pak slouží jako základ pro různé analýzy.
-Bez moderního měření by se nedaly využívat metody strojového učení, které dokážou předpovědět budoucí spotřebu. Tyto technologie pomáhají optimalizovat provoz nebo lépe zapojit obnovitelné zdroje do sítě. Pro běžného člověka mají moderní měření velký přínos. 
-Díky chytrým zásuvkám a aplikacím je možné vidět, které spotřebiče berou nejvíc elektřiny a kdy je odběr nejvyšší. To pomáhá lépe plánovat používání zařízení, snížit náklady a mít větší kontrolu nad energií.
-Moderní měření tak není jen technická novinka, ale praktický nástroj, který podporuje úspory a efektivnější využívání energie v domácnosti.
+Moderní měření spotřeby energie už není jen o tom, co ukáže klasický elektroměr na konci měsíce. Dnes se používají chytré měřiče a senzory, které sbírají data průběžně a mnohem přesněji. Díky tomu je vidět, kdy a kde se energie spotřebovává, například zda domácnost nejvíc zatěžuje síť večer při vaření nebo ráno při zapínání spotřebičů. Moderní měření spotřeby energie navíc umí ukázat spotřebu jednotlivých zařízení, takže lze zjistit, kde vznikají zbytečné ztráty.
+
 
 \chapter{Popis dat a jejich struktura}
+
 \section{teorie o časových řadách} 
-Než začneme popisovat samotná data, je vhodné nejprve vymezit, co přesně rozumíme pojmem časová řada. V literatuře se časová řada zpravidla definuje jako chronologicky uspořádaná posloupnost hodnot určitého statistického ukazatele, přičemž jednotlivé hodnoty zachycují vývoj sledovaného jevu v čase.
+Dle \cite{Krivy2012} je časová řada chápána jako data, která jsou seřazena podle času. Může být zaznamenán například seismický záznam, denní teploty, množství nečistot v ovzduší, počtem jedinců v populaci apod. Jde tedy o různé údaje, které jsou sledovány v čase. Většinou jsou používány statistické (náhodné) časové řady, u kterých jsou hodnoty ovlivněny náhodou a nejistotou. Nejedná se o přesné, předem dané řady, které by mohly být popsány jedním matematickým vzorcem. Z hlediska teorie náhodných procesů může být časová řada chápána jako konkrétní realizace nějakého náhodného procesu, tedy jako jedna z možných podob jeho vývoje v čase.
 
-„\textit{
-Časová řada je chronologicky uspořádaná posloupnost hodnot určitého statistického ukazatele. \\[6pt]
-$y_t = f(t)$ \\[6pt]
-$y_1, y_2, \ldots, y_n$, kde $t = 1, 2, \ldots, n$ \\[6pt]
-$y$ = ukazatel \\ 
-$t$ = časová proměnná \\ 
-$n$ = počet členů řady \\[6pt]
-Pomocí časových řad můžeme zkoumat dynamiku jevů v čase. Mají základní význam pro analýzu příčin, které na tyto jevy působily a ovlivňovaly jejich chování v minulosti, tak pro předvídání jejich budoucího vývoje.
-}“ \cite{Dobrovolny2006}
+Ve shodě s \cite{Dobrovolny2006} definujeme časovou řadu následovně: Časová řada je chronologicky uspořádaná posloupnost hodnot určitého statistického ukazatele.
+yt = f(t)
+y1, y2, . . . , yn, kde t = 1, 2, . . . , n
+y = ukazatel
+t = časová proměnná
+n = počet členů řady
+Pomocí časových řad můžeme zkoumat dynamiku jevů v čase. Mají základní význam pro analýzu
+příčin, které na tyto jevy působily a ovlivňovaly jejich chování v minulosti, tak pro předvídání jejich
+budoucího vývoje.\cite{Dobrovolny2006}
 
+Časové řady lze klasifikovat podle typu sledovaného ukazatele na intervalové a okamžikové. Intervalové řady obsahují ukazatele, jejichž hodnoty závisí na délce časového intervalu sledování. Okamžikové řady zahrnují ukazatele vztahující se ke konkrétním časovým okamžikům, jejichž hodnoty nejsou závislé na délce sledovaného intervalu. 
+
+existují 2 druhy časových řad:
+a) Časová řada okamžiková: příslušný ukazatel udává, kolik jevů existuje v daném časovém okamžiku (např. počet obyvatelstva k určitému dni). 
+b) Časová řada intervalová: příslušný ukazatel udává, kolik jevů vzniklo či zaniklo v určitém časovém intervalu (např. počet sňatků během roku). Nejsou-li jednotlivé časové intervaly ekvidistantní, musíme provést očištění časové řady od důsledků kalendářních variací
+\cite{Arlt2007}
+
+
+
+\subsection{Struktura popisu a sběru dat}
+Pro tuto práci jsem použil data, které mi poskytlo datové centrum ústeckho kraje a tato data nejsou veřejně přístupná, ale pro účely mé práce jsou  zpřístupněná na tomto odkazu\footnote{https://disk.portabo.cz/s/fXEC0sJRhU7ChrV} 
+Tento prvotní dataset obsahuje  10 792 065 záznamů o spotřebě energie v anonzmizované podobě. Data jsou pevně měřená od června 2022 do října 2024, kde každý záznam reprezentuje stav spotřeby v 15 minutovém intervalu. 
+Datum v prvotním datasetu není to jsem si pomocí funkce 
+\texttt{df['v\_ts'] = pd.to\_datetime(df['v\_ts'], unit='ns')}
+
+převedl z číselného formátu na datum.
+
+níže příkladám tabulku, ve které je popsána moje struktura 
+
+\begin{table}[htbp]
+\centering
+\caption{Popis struktury datového souboru}
+\label{tab:data_description}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Název sloupce} & \textbf{Datový typ} & \textbf{Význam / Popis} & \textbf{Příklad hodnoty} \\ \midrule
+\texttt{Unnamed: 0}    & Integer             & Původní index řádku z primárního exportu. & 0 \\
+\texttt{v\_ts}         & Datetime            & Časové razítko měření (15min interval). & 2022-06-01 00:15:00 \\
+\texttt{id\_numeric}   & Integer             & Unikátní identifikátor měřicího bodu. & 1 \\
+\texttt{anonymized\_val} & Float             & Zaznamenaná spotřeba energie (normalizovaná). & 0.0 \\
+\texttt{datum}         & Date                & Odvozený sloupec pro denní agregace. & 2022-06-01 \\ \bottomrule
+\multicolumn{3}{l}{\textit{Zdroj: vlastní zpracování autora}} 
+\end{tabular}
+\end{table}
+
+Ještě přiložím jednu tabulku a ta tabulka ukazuje sledované parametry  prvotního dataset, tedy mých 10 792 065 záznamů 
+
+\begin{table}[htbp]
+\centering
+\caption{Výstup prvotní analýzy surového datasetu }
+\label{tab:raw_data_check}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Sledovaný parametr} & \textbf{Zjištěná hodnota} \\ \midrule
+Počet unikátních hodnot v \texttt{id\_numeric} & 76 \\
+Rozsah identifikátorů ID & 1 až 76 \\
+Max. počet záznamů pro jedno ID v jeden čas & 144 \\
+Celkový počet řádků v surovém stavu & 10\,792\,065 \\ \bottomrule
+\bottomrule
+\multicolumn{3}{l}{\textit{Zdroj: vlastní zpracování autora}} \\
+\end{tabular}
+\end{table}
+
+Ukazuje se, že  10 792 065 záznamů je docela velké číslo a těžko by se s tím pracovalo, tak jsem odstranil duplicitní hodnoty a neaktivní zařízení a ve výsledku mi zbylo 3 009 634 záznamů. s tímhle už se dá v pohodě pracovat. Pro kontrolu pošlu tabulku, kde je srovnání dat před vyčištěním a po vyčištění dat 
+
+
+\begin{table}[htbp]
+\centering
+\caption{Srovnání statistických parametrů datasetu před a po procesu čištění}
+\label{tab:srovnani_dat}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Parametr} & \textbf{Surová data} & \textbf{Vyčištěná data} \\ \midrule
+Počet řádků celkem & 10\,792\,065 & 3\,009\,634 \\
+Počet unikátních ID (zařízení) & 76 & 76 \\
+Max. počet záznamů pro jeden čas & 144 & 1 \\ \bottomrule
+\multicolumn{3}{l}{\textit{Zdroj: vlastní výpočet autora na základě primárních dat}}
+\end{tabular}
+\end{table}
+
+samotný kod pro načtení a samotné vyčištění dat popisuji v praktické části v kapitole 
+
+
+ještě jsem přidal jednu tabulku, která identifikuje zařízení s nejvyšší a nejnižší integritou časových řadu a top 5 zařízení, které mají nejvyšší procentuální výpadek dat. 
+ Jako referenční vzorek slouží zařízení ID 1 s celkovým počtem 84,760 záznamů. Na opačném pólu se nachází zařízení ID 21, které představuje extrémní případ s pouhými 97 záznamy.
+
+Vzhledem k tomu, že rozsah měření u ID 21 neodpovídá ani 24 hodinám kontinuálního provozu (při 15minutovém intervalu), je tento vzorek pro identifikaci typických vzorců spotřeby a následnou klasifikaci zcela nepoužitelný. Z tohoto důvodu bylo toto zařízení z dalšího zpracování vyřazeno. U ostatních zařízení s vysokým procentuálním výpadkem (např. ID 76 a 12) je patrné, že data pokrývají pouze zlomek sledovaného období, což bude zohledněno při následné normalizaci a tvorbě příznaků.“
+ samotný kod pro načtění těchto tabulek popíšu opět v praktické části v kapitole 
+
+\begin{table}[htbp]
+\centering
+\caption{Analýza kontinuity dat a identifikace zařízení s největší chybovostí}
+\label{tab:vypadky_dat}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{ID měřidla} & \textbf{Počet záznamů} & \textbf{Chybějící data [\%]} \\ \midrule
+1 (Nejdelší řada)   & 84\,760               & 0,00                         \\
+\textit{Průměr na ID} & \textit{39\,600}      & \textit{53,28}               \\ \midrule
+21 (Kriticky krátká)& 97                    & 99,89                        \\
+76                  & 6\,097                & 92,81                        \\
+12                  & 13\,440               & 84,14                        \\
+32                  & 21\,283               & 74,89                        \\
+73                  & 21\,888               & 74,18                        \\ \bottomrule
+\multicolumn{3}{l}{\textit{Zdroj: vlastní výpočet autora na základě primárních dat}}
+\end{tabular}
+\end{table}
 
 \section{Data o spotřebě energie}
 Data o spotřebě energie jsou číselné hodnoty uspořádané v čase, které tvoří časové řady a umožňují sledovat, analyzovat a předpovídat energetické chování jednotlivců, domácností či celých systémů. V oblasti energetiky se velmi často setkáváme s pojmem kilowatthodina (kWh), který představuje základní jednotku pro vyjádření spotřeby elektrické energie. Přestože se objevuje na každém vyúčtování, jeho skutečný význam nebývá pro běžného spotřebitele vždy zcela jasný.
@@ -96,37 +186,93 @@ Data o spotřebě energie jsou číselné hodnoty uspořádané v čase, které 
 Každý elektrický spotřebič je charakterizován svým příkonem, tedy výkonem, který udává množství energie potřebné pro jeho provoz. 
 Tento výkon se vyjadřuje ve wattech (W) nebo kilowattech (kW). Pokud zařízení o příkonu 1 kW pracuje po dobu jedné hodiny, spotřebuje právě 1 kWh energie. Z toho vyplývá, že kilowatthodina propojuje výkon spotřebiče s časem jeho provozu a vytváří tak údaj, který je přímo využitelný pro měření spotřeby.
 
-Data o spotřebě energie jsou proto zaznamenávána v kilowatthodinách a mají charakter časových řad, kdy je každá hodnota spojena s konkrétním časovým okamžikem. Díky tomu lze sledovat nejen celkovou spotřebu, ale i její průběh v čase, což umožňuje identifikovat energeticky náročné spotřebiče, analyzovat uživatelské chování a optimalizovat provoz domácnosti či podniku.
+Data o spotřebě energie jsou proto zaznamenávána v kilowatthodinách a mají charakter časových řad, kdy je každá hodnota spojena s konkrétním časovým okamžikem\footnote{tedy v konkrétní době např. určité datum nebo konkrétní hodina}.
+Data, která se budou používat mají charakter intervalových časových řad\footnote{kolik se naměří za daný interval  např od kolika do kolika nebo od jakého datumu nebo i po kvartálech}
  Vedle kilowatthodiny se v energetice používají i větší jednotky, například megawatthodina (MWh), která odpovídá tisíci kilowatthodinám. Tyto jednotky se uplatňují zejména při hodnocení výroby elektráren nebo při sledování spotřeby na úrovni celých regionů \cite{CSU2023}.
-Spotřeba energie vyjádřená v~kilowatthodinách (kWh) se může výrazně lišit podle typu budovy a jejího provozu. Každý objekt má odlišné potřeby, které se odrážejí v~množství naměřených dat. Pro ilustraci lze uvést příklady různých typů budov:
+Spotřeba energie vyjádřená v~kilowatthodinách (kWh) se může výrazně lišit podle typu budovy a jejího provozu. Každý objekt má odlišné potřeby, které se odrážejí v~množství naměřených dat. . Pro ilustraci lze uvést příklady různých typů budov, jejichž formulaci jsme konzultovali s Dr. Vaibarem, který ji doporučil jako výstižnou: Každý objekt má odlišné potřeby , které se odrážejí v množství naměřených dat a lze je dále rozdělit na:
 
 \begin{enumerate}
     \item \textbf{Domácnost}: lze sledovat spotřebu běžných spotřebičů, osvětlení nebo případně vytápění. Data mohou ukázat, jak se spotřeba mění v~průběhu dne či roku a jak ji ovlivňují návyky obyvatel.
 
-    \item \textbf{Škola}: měří se spotřeba spojená s~provozem učeben, počítačových laboratoří, kuchyně nebo tělocvičny. Naměřená data mohou odhalit rozdíly mezi běžným provozem během vyučování a minimální spotřebou o~víkendech či prázdninách.
+\begin{center}
+\includegraphics[width=0.95\textwidth]{graf domacnost.png}
+    \nopagebreak
+    \label{fig:skola}
+    \vspace{0.2cm}
+    \small \textbf{Zdroj:} Vlastní zpracování autora na základě naměřených dat
+\end{center}
 
+    \item \textbf{Škola}: měří se spotřeba spojená s~provozem učeben, počítačových laboratoří, kuchyně nebo tělocvičny. Naměřená data mohou odhalit rozdíly mezi běžným provozem během vyučování a minimální spotřebou o~víkendech či prázdninách.
+\begin{center}
+\includegraphics[width=0.95\textwidth]{graf skola.png}
+    \vspace{0.1cm} \\
+    \small \textbf{Zdroj:} Vlastní zpracování autora na základě naměřených dat
+\end{center}
+   
     \item \textbf{Hotel}: má specifickou strukturu spotřeby, protože se jedná o~budovu s~nepřetržitým provozem pokojů, kuchyně, prádelny nebo klimatizace. Data tak mohou ukázat, jak se spotřeba mění podle obsazenosti hotelu a sezóny.
+
+   \begin{center}
+   \includegraphics[width=0.95\textwidth]{graf hotel.png}
+    \vspace{0.1cm} \\
+    \small \textbf{Zdroj:} Vlastní zpracování autora na základě naměřených dat
+\end{center}
 
     \item \textbf{Nemocnice}: zde je spotřeba energie komplexnější. Sledují se údaje například z~provozu diagnostických přístrojů, sterilizačních zařízení, laboratoří, ale také z~osvětlení, klimatizace a dalších podpůrných služeb. Naměřená data jsou zde velmi různorodá a ukazují vysokou náročnost nepřetržitého provozu.
 
+    \begin{center}
+\includegraphics[width=0.95\textwidth]{graf nemocnice.png}
+    \vspace{0.1cm} \\
+    \small \textbf{Zdroj:} Vlastní zpracování autora na základě naměřených dat
+\end{center}
+
 \item \textbf{Kancelářská budova}
+
+samotné kody, jak jsem grafy vytovřil  popisuji v praktické části v kapitole
+
 \end{enumerate}
 Představme si domácnost, kde se sleduje denní spotřeba elektřiny po dobu jednoho týdne. V pondělí byla spotřeba 12 kWh, v úterý 15 kWh, ve středu 14 kWh, ve čtvrtek 18 kWh, v pátek 20 kWh, v sobotu 25 kWh a v neděli 22 kWh. Každá hodnota je přitom pevně spojena s konkrétním dnem, a dohromady tak tvoří časovou řadu.
 
-Z těchto údajů je možné vyčíst, že spotřeba postupně roste směrem k víkendu, kdy je domácnost více využívána. Zároveň se ukazuje sezónní prvek, tedy že víkendové dny mají vyšší spotřebu než pracovní dny. Náhodné fluktuace jsou patrné, například ve středu, kdy byla spotřeba nižší než v úterý, což může souviset s tím, že rodina nebyla večer doma. Taková časová řada nám tedy neukazuje jen jednotlivá čísla, ale odhaluje vzorce chování: kdy se spotřebovává více energie, jak se mění návyky během týdne a kde by bylo možné hledat úspory.
+Z těchto údajů je možné vyčíst, že spotřeba postupně roste směrem k víkendu, kdy je domácnost více využívána. Zároveň se ukazuje sezónní prvek, tedy že víkendové dny mají vyšší spotřebu než pracovní dny. Náhodné fluktuace jsou patrné, například ve středu, kdy byla spotřeba nižší než v úterý, což může souviset s tím, že rodina nebyla večer doma. Taková časová řada nám tedy neukazuje jen jednotlivá čísla, ale odhaluje vzorce chování: kdy se spotřebovává více energie, jak se mění návyky během týdne a kde by bylo možné hledat úspory. 
 
+V souvislosti s měřením spotřebované energie je vhodné také uvést, že pro různé typy budov existuje Průkaz energetické náročnosti budov (PENB). Průkaz energetické náročnosti budovy (PENB) byl v České republice zaveden novelou zákona č. 406/2000 Sb. v roce 2007 jako reakce na evropskou směrnici 2002/91/ES. Jeho cílem je jednotně hodnotit, kolik energie budova potřebuje pro svůj provoz, tedy nejen na vytápění, ale také na chlazení, větrání, ohřev vody a osvětlení. Průkaz má platnost 10 let a je povinný při výstavbě nových budov, při významných rekonstrukcích a také při prodeji či pronájmu objektů, na které se povinnost vztahuje. Budovy se podle výsledné měrné spotřeby energie zařazují do tříd A–G, kde A představuje mimořádně úspornou a G mimořádně nehospodárnou budovu. PENB mohou zpracovávat pouze energetičtí experti autorizovaní MPO. Hodnocení v PENB vychází z reálných dat o energetické náročnosti různých typů budov. Ta se mezi jednotlivými kategoriemi výrazně liší, protože každá budova má odlišný provozní režim, technické vybavení i požadavky na komfort. Domácnosti mají obvykle nejnižší spotřebu energie, protože jejich provoz je relativně jednoduchý a probíhá v omezeném časovém rozsahu. Školy mají vyšší spotřebu zejména kvůli většímu objemu vytápěného prostoru a potřebě větrání, ale jejich provoz je časově omezený, což spotřebu snižuje. Na opačném konci spektra stojí nemocnice, které patří k energeticky nejnáročnějším budovám vůbec. Provozují nepřetržitý režim 24/7, mají vysoké nároky na hygienu, větrání, sterilizaci, ohřev vody a provoz zdravotnických technologií. Hotely mají také nadprůměrnou spotřebu, protože kombinují ubytovací služby, restaurace, wellness a často i klimatizaci. Kancelářské budovy se obvykle nacházejí mezi školami a hotely. Jejich spotřebu ovlivňuje zejména provoz IT technologií, osvětlení a klimatizace. Tato rozdílnost spotřeby energie mezi jednotlivými typy budov je důležitým podkladem pro interpretaci PENB. Zatímco třída C představuje referenční hodnotu pro daný typ budovy, absolutní čísla se mezi kategoriemi výrazně liší. Proto je při hodnocení energetické náročnosti vždy nutné zohlednit, o jaký typ objektu se jedná a jaké má provozní požadavky
 
-\subsection{Elekroměry}
-Elektroměr, někdy označovaný jako elektrické hodiny, je zařízení určené k měření spotřeby elektrické energie v domácnostech. Zatímco první modely připomínaly klasické hodiny s~ručičkami a číselníkem, postupně je nahradily moderní varianty, například statické či impulsní. Spotřeba se udává v kilowatthodinách (kWh) a dnešní elektroměry jsou mnohem přesnější než jejich předchůdci. Impulsní typ funguje na principu počítání impulsů odpovídajících jedné kWh, a kromě samotného měření dokáže zobrazit i další údaje, například maximální odběr nebo komunikovat s počítačem \cite{CEZ2021}.
+\cite{izolace}
 
+ \begin{center}
+\includegraphics[width=0.95\textwidth]{image.png}
+    \vspace{0.1cm} \\
+    \small \textbf{Zdroj:} 
+    \cite{izolace}
+\end{center}
+ 
+
+\subsection{Elektroměry}
+\subsubsection{co je elektroměr}
+Elektroměr, někdy označovaný jako elektrické hodiny, je zařízení určené k měření spotřeby elektrické energie v domácnostech. Zatímco první modely připomínaly klasické hodiny s~ručičkami a číselníkem, postupně je nahradily moderní varianty, například statické či impulsní. 
+\begin{quote}
+„\textit{Elektroměry uvádějí spotřebu elektřiny v kilowatthodinách (kWh), ty dnešní jsou také mnohem přesnější než ty první. Impulsní elektroměr vychází z počtu impulsů na 1 kWh a vedle měření spotřeby disponují i dalšími funkcemi, jako je měření maximální spotřeby nebo komunikace s počítačem a další.}“ \cite{CEZ2021}
+\end{quote}
+
+\subsubsection{k čemu elektroměr slouží}
 Úloha elektroměru však není jen technická. Jeho údaje slouží jako základ pro vyúčtování elektřiny. 
 Protože je umístěn na rozhraní mezi distributorem a odběratelem, umožňuje přesně určit, kolik energie bylo spotřebováno a jaká částka bude účtována. 
 Cena elektřiny se přitom neodvíjí pouze od množství odebrané energie, ale i od dalších faktorů, které ovlivňují konečný účet. Elektroměry se používají nejen v domácnostech, ale také ve školách či podnicích, kde poskytují klíčové údaje pro vyúčtování i analýzu spotřeby. 
-Moderní přístroje navíc umožňují sledovat průběh odběru v čase, což otevírá prostor pro efektivnější hospodaření s elektřinou. Rozdíly mezi jednotlivými typy měření jsou patrné zejména v tom, jak detailně dokáží spotřebu zaznamenat. V domácnostech se nejčastěji používá neprůběhové měření typu C, které ukazuje pouze celkový stav. U větších odběratelů, jako jsou školy nebo úřady, 
-se naopak uplatňuje průběhové měření typu B. To sleduje spotřebu v pravidelných intervalech, od července 2024 konkrétně každých 15 minut. Tento způsob je povinný, např. pro odběrná místa  s fotovoltaikou, pro sdílení elektřiny nebo pro zákazníky s produkty navázanými na krátkodobé trhy. Chytré elektroměry, které průběhové měření umožňují, automaticky ukládají data a odesílají je distributorovi. Díky tomu je možné nejen přesně účtovat spotřebu, ale také přizpůsobit provoz domácnosti či instituce aktuálním tarifům \cite{ENERGIE,2025}.
-\subsection{druhy Elektroměrů}
+\begin{quote}
+„\textit{Jednoduše řečeno – díky tomuto malému přístroji distributor ví, kolik elektřiny jste v domácnosti spotřebovali a kolik budete za elektřinu platit. Cena elektřiny ale nezávisí pouze na spotřebované elektrické energii.}“ \cite{CEZ2021}
+\end{quote}
+\subsubsection{jak funguje elektroměr}
 Princip elektroměru není ve skutečnosti příliš složitý. 
-Zařízení pracuje jako integrátor, který dokáže zaznamenávat průběh spotřeby. Měření může probíhat buď přímo, kdy elektrický proud prochází samotným elektroměrem, nebo nepřímo, kdy se využívají měřicí transformátory obepínající přívodní fázové vodiče. Je také důležité zdůraznit, že odlišný způsob fungování najdeme u klasického mechanického indukčního elektroměru a u moderního elektronického impulsního typu \cite{CEZ2021}. V~současnosti se pro měření spotřeby energie používají tři základní typy elektroměrů, které se liší principem měření i~způsobem zobrazování odečtů. Jedná se o:
+Zdroj \cite{CEZ2021} poukazuje,že zařízení pracuje jako integrátor, který dokáže zaznamenávat průběh spotřeby. Měření může probíhat buď přímo, kdy elektrický proud prochází samotným elektroměrem, nebo nepřímo, kdy se využívají měřicí transformátory obepínající přívodní fázové vodiče. 
+\begin{quote}
+„\textit{Nutno také podotknout, že se liší princip fungování u mechanického indukčního elektroměru a elektronického impulsního elektroměru.}“ \cite{CEZ2021}
+\end{quote}
+Moderní přístroje navíc umožňují sledovat průběh odběru v čase, což otevírá prostor pro efektivnější hospodaření s elektřinou. Rozdíly mezi jednotlivými typy měření jsou patrné zejména v tom, jak detailně dokáží spotřebu zaznamenat. V domácnostech se nejčastěji používá neprůběhové měření typu C, které ukazuje pouze celkový stav. 
+U větších odběratelů, jako jsou školy nebo úřady, se naopak uplatňuje průběhové měření typu B. To sleduje spotřebu v pravidelných intervalech, od července 2024 konkrétně každých 15 minut. Tento způsob je povinný, např. pro odběrná místa  s fotovoltaikou, pro sdílení elektřiny nebo pro zákazníky s produkty navázanými na krátkodobé trhy. Chytré elektroměry, které průběhové měření umožňují, automaticky ukládají data a odesílají je distributorovi. Díky tomu je možné nejen přesně účtovat spotřebu, ale také přizpůsobit provoz domácnosti či instituce aktuálním tarifům \cite{Energie2025}.
+\begin{quote}
+„\textit{Distributor kdykoli zná přesný stav elektroměru, odečet tedy probíhá na dálku bez účasti obchůzkářů zapisujících údaje ručně, nemůže tak dojít k chybě. Vyúčtování vychází z reálných dat bez jakýchkoli odhadů}“ \cite{Energie2025}
+\end{quote}
+\subsubsection{druhy elektroměrů}
+V~současnosti se pro měření spotřeby energie používají tři základní typy elektroměrů, které se liší principem měření i~způsobem zobrazování odečtů. 
 \begin{enumerate}
     \item \textbf{Elektrodynamické (indukční) elektroměry}
 
@@ -144,12 +290,17 @@ Tento typ zařízení má své přednosti i slabiny. Mezi nevýhody patří niž
 
 Elektronické elektroměry fungují na principu měření napětí a proudu, jejich vzájemného násobení a ukládání výsledků do paměti. Díky tomu dokáží zobrazit nejen spotřebovanou energii, ale i~další parametry přímo na displeji. Oproti starším indukčním typům nabízejí vyšší přesnost, možnost využívat více tarifů a snadné propojení s~automatizovanými systémy řízení či sběru dat. Jejich slabinou je kratší životnost, složitější opravy a vyšší citlivost na přepětí, přesto se staly běžným standardem a postupně nahradily mechanické modely \cite{TypyElektromeruND}.
 
-Specifickou variantou je elektronický impulsní elektroměr, který převádí naměřené hodnoty na impulsy odpovídající spotřebované energii. Každý impuls představuje určitou konstantu, obvykle jednu kilowatthodinu. Uvnitř zařízení se nacházejí obvody zpracovávající činné i jalové\footnote{Jalové napětí je složka střídavého napětí spojená s indukčními a kapacitními prvky v obvodu, která se nepodílí na užitečném výkonu, ale způsobuje pouze výměnu energie mezi zdrojem a spotřebičem} složky napětí, které jsou vedeny přes převodník a zesilovač do násobičky. Tam dochází k jejich kombinaci a výsledkem je série impulsů zobrazovaných na displeji, díky nimž lze sledovat spotřebu energie v~reálném čase \cite{CEZ2021}.
+Specifickou variantou je elektronický impulsní elektroměr.
+\begin{quote}
+„\textit{ měření tímto elektroměrem je o něco jednodušší, vychází totiž z počtu impulsů v zabudovaném wattmetru a udává konstantu v impulsech za 1 kWh.}“ \cite{CEZ2021}
+\end{quote}
+
+Uvnitř zařízení se nacházejí obvody zpracovávající činné i jalové\footnote{Jalové napětí je složka střídavého napětí spojená s indukčními a kapacitními prvky v obvodu, která se nepodílí na užitečném výkonu, ale způsobuje pouze výměnu energie mezi zdrojem a spotřebičem} složky napětí, které jsou vedeny přes převodník a zesilovač do násobičky. Tam dochází k jejich kombinaci a výsledkem je série impulsů zobrazovaných na displeji, díky nimž lze sledovat spotřebu energie v~reálném čase \cite{CEZ2021}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{elektromer_2.png}
-    \caption{Elektronický elektroměr}
+    \caption{Elektronický elektroměr \cite{EastronSDM72D}}
     \label{fig:elektronicky_elektromer}
 \end{figure}
 
@@ -161,40 +312,10 @@ ale výsledky se zobrazují na klasickém mechanickém počítadle. Tento typ vz
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{elektromer_3.png}
-    \caption{Hybridní elektroměr.}
+    \caption{Hybridní elektroměr. \cite{SolaxDTSU666}}
     \label{fig:hybridni_elektromer}
 \end{figure}
 \end{enumerate}
-
-\subsection{Struktura popisu a sběru dat}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{dataset.png}
-    \caption{Výsledky z Visual Studia}
-    \label{fig:vysledekVS2}
-\end{figure}
-
-vlastní zpracování autora
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{dataset 2.png}
-    \caption{Výsledky z Visual Studia}
-    \label{fig:vysledekVS}
-\end{figure}
-vlastní zpracování autora
-
-
-Tyto data, se kterýma budu pracovat pocházejí ze stránky 
-https://disk.portabo.cz/s/fXEC0sJRhU7ChrV 
-a jsou to zmiňovaná reálná data odečtů elektrické energie z různých objektů u nichž je pouze číeslný faktor
-v tomto datasetu se nachází přes 10 000 záznámů, které jsou aktualizované po 15 minutách. Pro ukázku jsem vložil 2 screenshoty z toho které ukazují tyto hodnoty:
-údaj v ts je časový údaj (datum a čas) po 15 minutách. 
-id numeric je identifikátor objektu (číslený identifikátor jednotlivých objektů bez konkrétního typu)
-anoymized value je údaj zaznanemaného množství spotřebované energie)
-
 
 
 \section{použití metod strojového učení pro analýzy časových řad}
@@ -223,8 +344,7 @@ Vývoj metod hlubokého učení pro analýzu časových řad lze podle \cite{Pri
 sekvencích. Tento vývoj odráží snahu postupně překonávat omezení předchozích přístupů a vytvářet stále robustnější rámec pro analýzu sekvenčních dat.
 Když se mluví o různých typech neuronových sítí, je vhodné si je představit na příkladu předpovědi spotřeby elektřiny. Jednoduché RNN fungují tak, že si pamatují pouze krátkou historii. Hodí se například 
 pro odhad, jak bude zatížení sítě vypadat během několika následujících hodin, podobně jako když sledujeme, že večer lidé zapínají televizi a spotřeba krátce stoupne. LSTM sítě mají navíc paměťové mechanismy, díky čemuž dokážou pracovat s delšími časovými úseky. Umí tak zachytit sezónní vzorce, například že v zimě je spotřeba energie 
-vyšší než v létě, nebo že o víkendech bývá jiná než ve všední dny. GRU fungují podobně jako LSTM, ale jejich  architektura je jednodušší a výpočetně úspornější, což je výhodné tam, kde je třeba zpracovávat velké množství dat 
-ze senzorů v reálném čase.
+vyšší než v létě, nebo že o víkendech bývá jiná než ve všední dny. GRU fungují podobně jako LSTM, ale jejich  architektura je jednodušší a výpočetně úspornější, což je výhodné tam, kde je třeba zpracovávat velké množství dat  ze senzorů v reálném čase.
 
 Nejmodernější Transformery dokáží pracovat s velmi dlouhými časovými řadami a hledat v nich komplexní souvislosti.V energetice se používají například k odhadu zatížení celé distribuční sítě, a to nejen na několik hodin dopředu, 
 ale i s ohledem na dlouhodobé trendy. To je zásadní například při plánování kapacity sítě v situacích, kdy se očekává nárůst počtu domácností s fotovoltaikami nebo elektromobily.
@@ -244,13 +364,3 @@ dokáží zpracovat obrovské množství dat najednou a hledat v nich složité 
 Moderní architektury dokážou zachytit komplexní závislosti v datech, zatímco Raschka \cite{Raschka2019} se soustředí na to, jak je prakticky naprogramovat a použít. V energetice to znamená, 
 že modely mohou pracovat nejen s okamžitými změnami spotřeby, ale i s dlouhodobými vzorci chování budov, například že kancelářské budovy mají jiný profil než nemocnice nebo školy. Díky tomu lze budovy klasifikovat podle jejich 
 dynamických energetických profilů, nikoli jen podle statických údajů, jako je velikost nebo počet místností.
-
-Sschopnost analyzovat velké množství senzorových dat je klíčová pro rozvoj chytrých energetických sítí. Pokud systém dokáže rozpoznat dlouhodobé vzorce spotřeby a reagovat na změny, 
-může lépe řídit tok energie a předcházet přetížení. V praxi to znamená, že město může například lépe plánovat, kdy zapojit záložní zdroje, nebo jak optimalizovat využití obnovitelných zdrojů.
-Volba modelu strojového učení vždy závisí na povaze dat. V energetice to znamená, že jiný přístup se hodí pro domácnost, jiný pro nemocnici nebo hotel. Jednodušší RNN zvládnou krátkodobé odhady, například 
-předpovědět, že v domácnosti večer stoupne spotřeba, když se zapínají spotřebiče. LSTM a GRU dokážou pracovat s delšími časovými řadami a zachytit sezónní vzorce. To je užitečné například ve škole, kde je spotřeba výrazně 
-vyšší během školního roku a nižší o prázdninách, nebo v nemocnici, kde se spotřeba mění podle ročních období. 
-Tyto modely si „pamatují“ delší kontext, takže dokážou předvídat i cyklické chování. Transformery se uplatní tam, kde je potřeba zpracovat velké množství dat najednou a hledat složité souvislosti. Typickým příkladem je hotel, kde spotřeba závisí nejen na ročním období, ale i na obsazenosti pokojů, počasí nebo konání akcí. 
-Transformer dokáže propojit všechny tyto faktory a nabídnout přesnější predikci. Pro statické údaje, jako je velikost budovy nebo typ vytápění, se hodí klasifikační algoritmy typu XGBoost nebo Random Forest. V praxi se 
-často kombinuje analýza časových řad s těmito metadaty, například nemocnice má jiný profil než škola, i když obě vykazují sezónní cykly.Celkově tedy platí, že perspektivnost modelů není dána jen jejich architekturou, ale hlavně schopností přizpůsobit se konkrétním datům. V kontextu energetiky to znamená, že správná volba modelu je klíčová pro klasifikaci budov 
-podle jejich dynamických energetických profilů, od domácností přes školy až po nemocnice a hotely. Díky tomu lze lépe plánovat spotřebu, předcházet přetížení sítě a optimalizovat provoz.
